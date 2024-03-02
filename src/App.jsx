@@ -11,6 +11,7 @@ export default function App() {
   return (
     <>
       <Navbar1 />
+      <Slid/>
       <Outlet />
       
 
