@@ -6,6 +6,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import './Swiper.css' ;
+import { Container } from 'react-bootstrap';
 export default function Categories()
  {
 const [category,setCategory] = useState([]);
@@ -19,11 +21,11 @@ const [category,setCategory] = useState([]);
   },[])
 
   return (
-      <Swiper className='mt-5'
+      <Swiper navigation="true" pagination="true" scrollbar="true"  
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={5}
-      navigation
+      spaceBetween={10}
+      slidesPerView={6}
+      navigation  
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
         onSlideChange={() => console.log('slide change')}
@@ -40,6 +42,6 @@ const [category,setCategory] = useState([]);
         } 
          
   </Swiper>
-  
+
   )
 }
