@@ -75,3 +75,20 @@ button:focus-visible {
   font-weight: 400;
   font-style: normal;
 }
+.cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: calc(100% / 3);
+}
+.card img {
+ width: 50%;
+}

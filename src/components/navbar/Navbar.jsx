@@ -19,7 +19,7 @@ function Navbar1() {
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Product</Nav.Link>
             <NavDropdown title="Categories" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">men's fashion</NavDropdown.Item>
+              <NavDropdown.Item ><Link to={'/Mens'}>men's fashion</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               appliances
               </NavDropdown.Item>

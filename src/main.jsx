@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Login from './components/login/Login.jsx';
 import Slid from './components/Swiper/Slid.jsx';
+import Mens from './Products/Mens';
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "Slid",
         element: <Slid />,
+      },
+      {
+        path: "Mens",
+        element: <Mens />,
+      },
+      {
+        path: "products",
+        element: <Mens />,
       },
     ],
   },
